@@ -1,21 +1,26 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="moixoloadventure.list">
+
+    <record model="ir.ui.view" id="moixoloadventure.player_list">
       <field name="name">moixoloadventure list</field>
-      <field name="model">moixoloadventure.moixoloadventure</field>
+      <field name="model">moixoloadventure.player</field>
       <field name="arch" type="xml">
         <tree>
+        
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="dni"/>
+          <field name="description"/>
+           <field name="edad"/>
+
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
+
+
 
     <record model="ir.actions.act_window" id="moixoloadventure.action_player_window">
       <field name="name">moixoloadventure Player</field>
@@ -37,6 +42,22 @@
       <field name="res_model">moixoloadventure.fighter</field>
       <field name="view_mode">tree,form</field>
     </record>
+    <!--
+    <record model="ir.ui.view" id="moixoloadventure.action_fighter_window">
+      <field name="name">moixoloadventure Fighter</field>
+      <field name="res_model">moixoloadventure.fighter</field>
+      <field name="arch" type="xml">
+        <tree  decoration-info="poweratac > 50">
+          <field name="name" />
+          <field name="res_model" />
+        </tree>
+      
+      </field>
+
+    </record>
+-->
+
+
     <record model="ir.actions.act_window" id="moixoloadventure.action_cantsquadronfigther_window">
       <field name="name">moixoloadventure CantLuchadores</field>
       <field name="res_model">moixoloadventure.cantsquadronfigther</field>
